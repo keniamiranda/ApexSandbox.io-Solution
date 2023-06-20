@@ -1,0 +1,16 @@
+public Boolean duplicateContacts(Contact c1, Contact c2) {
+        // Check if either contact has a phone number and if it matches
+    if (c1.Phone != null && c1.Phone == c2.Phone) {
+        return true;
+    }
+    
+    // Check if either contact has an email address and if it matches
+    if (c1.Email != null && c1.Email.equalsIgnoreCase(c2.Email)) {
+        return true;
+    }
+    
+    // Contacts are not duplicates
+    return false;
+}
+
+}
