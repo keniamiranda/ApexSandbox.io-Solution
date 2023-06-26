@@ -12,11 +12,3 @@ public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
     return largest;
 }
 
-// Exemplo de uso
-Integer numero1 = 5;
-Integer numero2 = 9;
-Integer numero3 = 3;
-Integer maiorNumero = findLargest(numero1, numero2, numero3);
-System.debug(maiorNumero);
-
-}
