@@ -1,4 +1,22 @@
 public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
-    Integer largest = Math.max(num1, Math.max(num2, num3));
+      Integer largest = num1;
+    
+    if (num2 > largest) {
+        largest = num2;
+    }
+    
+    if (num3 > largest) {
+        largest = num3;
+    }
+    
     return largest;
+}
+
+// Exemplo de uso
+Integer numero1 = 5;
+Integer numero2 = 9;
+Integer numero3 = 3;
+Integer maiorNumero = findLargest(numero1, numero2, numero3);
+System.debug(maiorNumero);
+
 }
